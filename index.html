@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="calculator-container" id="calculator">
+    <div class="glow-effect"></div>
+    <div class="calculator-content">
+      <div class="display-container">
+        <div class="previous-operation"></div>
+        <div class="current-operation">0</div>
+      </div>
+      <div class="keypad">
+        <button class="btn secondary" onclick="handleClear()">AC</button>
+        <button class="btn secondary" onclick="handleToggleSign()">+/-</button>
+        <button class="btn secondary" onclick="handlePercent()">%</button>
+        <button class="btn primary" onclick="handleOperation('/')">÷</button>
+
+        <button class="btn" onclick="handleNumber('7')">7</button>
+        <button class="btn" onclick="handleNumber('8')">8</button>
+        <button class="btn" onclick="handleNumber('9')">9</button>
+        <button class="btn primary" onclick="handleOperation('*')">×</button>
+
+        <button class="btn" onclick="handleNumber('4')">4</button>
+        <button class="btn" onclick="handleNumber('5')">5</button>
+        <button class="btn" onclick="handleNumber('6')">6</button>
+        <button class="btn primary" onclick="handleOperation('-')">−</button>
+
+        <button class="btn" onclick="handleNumber('1')">1</button>
+        <button class="btn" onclick="handleNumber('2')">2</button>
+        <button class="btn" onclick="handleNumber('3')">3</button>
+        <button class="btn primary" onclick="handleOperation('+')">+</button>
+
+        <button class="btn span-2" onclick="handleNumber('0')">0</button>
+        <button class="btn" onclick="handleNumber('.')">.</button>
+        <button class="btn primary" onclick="handleEqual()">=</button>
+
+        <button class="btn secondary span-4" onclick="handleBackspace()">⌫ Backspace</button>
+      </div>
+      <div class="signature">
+        Made with ♥ by <a href="https://tulugukishorebabu.vercel.app" target="_blank" rel="noopener noreferrer">KISHORE</a>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
